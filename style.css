@@ -1,0 +1,117 @@
+:root {
+  --bs-primary: #6366f1;
+  --bs-primary-rgb: rgb(99, 102, 241);
+  --bs-progress-bar-bg: #6366f1;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "InterVariable", sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
+.h1-custom {
+  font-weight: 600;
+  font-feature-settings: "cv11", "ss01";
+  letter-spacing: -0.1rem;
+}
+
+.h2-custom {
+  font-weight: 500;
+  font-feature-settings: "cv11", "ss01";
+  letter-spacing: -0.1rem;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  box-shadow: 0 1px 0 #d1d5db;
+}
+
+.navbar-expand-lg .navbar-nav .custom-nav-link {
+  padding: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.navbar-expand-lg .navbar-nav .custom-nav-link:hover {
+  color: var(--bs-primary);
+}
+
+.navbar .custom-navbar-toggler {
+  padding: 0.5rem 0.313rem;
+  border: none;
+}
+
+.navbar .custom-navbar-toggler:hover {
+  background-color: #f3f4f6;
+}
+
+.navbar .custom-navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler .icon-bar {
+  background-color: var(--bs-primary);
+  display: block;
+  height: 2px;
+  margin-top: 0.25rem;
+  transition: all 0.2s;
+  width: 20px;
+}
+
+.navbar .navbar-toggler.collapsed .top-bar {
+  background-color: var(--bs-primary);
+  transform: rotate(0);
+}
+
+.navbar .navbar-toggler .top-bar {
+  background-color: var(--bs-primary);
+  transform: rotate(45deg);
+  transform-origin: 16% 190%;
+}
+
+.navbar .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar .navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar .navbar-toggler.collapsed .bottom-bar {
+  background-color: var(--bs-primary);
+  transform: rotate(0);
+}
+
+.navbar .navbar-toggler .bottom-bar {
+  background-color: var(--bs-primary);
+  transform: rotate(-45deg);
+  transform-origin: 10% -80%;
+}
+
+#hero,
+#skills {
+  background: radial-gradient(
+    116.18% 118% at 50% 100%,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(218, 70, 239, 0.05) 41.83%,
+    rgba(241, 244, 253, 0.07) 82.52%
+  );
+}
+
+#hero .image-wrapper {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, #d946ef, #6366f1);
+}
+
+#hero .image-wrapper img {
+  width: 200px;
+  border-radius: 50%;
+}
