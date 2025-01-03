@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap v5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--  Bootstrap-icons v1.11.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- AOS v2.3.1 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Inter Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/Inter/inter.css" />
+    <title>Yannick REMY - Développeur Web</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36px" height="36px">
+              <defs>
+                <linearGradient id="grad1" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" style="stop-color: #6366f1" />
+                  <stop offset="100%" style="stop-color: #d946ef" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M 0.50472218,1.5624293e-6 9.6805028,15.355469 c 0.202526,0.33899 0.3105487,0.728168 0.3105487,1.123047 V 24 h 6.4960915 v -7.521484 c 1e-6,-1.568421 -0.420199,-3.104744 -1.224609,-4.451172 L 8.0769874,1.5624293e-6 Z"
+                fill="#1e293b"
+              />
+              <circle cx="20.245277" cy="3.2499993" r="3.25" fill="url(#grad1)" />
+            </svg>
+          </a>
+          <!-- Button -->
+          <button
+            class="navbar-toggler collapsed custom-navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-default"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar mt-0"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse" id="navbar-default">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#about">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#skills">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#projects">Mes projets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="container">
+          <div class="row justify-content-center align-items-center vh-100">
+            <div class="text-center">
+              <div class="image-wrapper mb-4">
+                <img src="https://dummyimage.com/200x200.gif" alt="Photo de profil de Yannick REMY" />
+              </div>
+              <h1 class="display-4 h1-custom">Yannick REMY</h1>
+              <h2 class="h2-custom mb-0">Développeur Web</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6 col-12 mb-md-0 mb-4" data-aos="fade-right">
+              <img src="https://dummyimage.com/500x500.gif" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-6 col-12" data-aos="fade-left">
+              <h2 class="mb-4">A propos de moi</h2>
+              <p>
+                Développeur web autodidacte, j’aimerais avoir l’opportunité de transformer ma passion pour le code en
+                une carrière. Curieux et débrouillard, j’apprends vite et m’adapte rapidement à de nouveaux outils et
+                concepts.
+              </p>
+              <p>
+                Depuis un an, je me suis plongé dans le développement web, aussi bien front-end que back-end, à travers
+                des projets concrets qui m’ont permis de renforcer mes compétences techniques. Concevoir des solutions
+                sur mesure pour répondre aux besoins des utilisateurs est devenu une véritable source de motivation pour
+                moi.
+              </p>
+              <p>
+                Toujours prêt à apprendre et à relever de nouveaux défis, je cherche à m’investir dans des projets
+                innovants où je pourrai mettre ma créativité et mes compétences à profit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills">
+        <div class="container">
+          <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-12 text-center">
+              <h2>Compétences</h2>
+              <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-12 p-4" data-aos="fade-right">
+                  <h3 class="mb-4">Soft-skills</h3>
+                  Travail en équipe
+                  <div class="progress mb-4">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 90%"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      90 %
+                    </div>
+                  </div>
+                  Capacité d'écoute
+                  <div class="progress mb-4">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80 %
+                    </div>
+                  </div>
+                  Confiance en soi
+                  <div class="progress mb-4">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      100 %
+                    </div>
+                  </div>
+                </div>               
+                <div class="col-xl-4 col-md-12 p-4" data-aos="fade-left">
+                  <h3 class="mb-4">Hard-skills</h3>
+                  Intégration web (HTML/CSS)
+                  <div class="progress mb-4">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 95%"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      95 %
+                    </div>
+                  </div>
+                  Développement back-end (PHP/Symfony)
+                  <div class="progress mb-4">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 85%"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      85 %
+                    </div>
+                  </div>
+                  Gestion de base de données (SQL/MySQL)
+                  <div class="progress mb-4">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      75 %
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projets -->
+      <section id="projects">
+        <div class="container py-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 text-center">
+              <h2 class="mb-4">Projets réalisés</h2>
+              <div class="row justify-content-center">
+                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                  <div class="card">
+                    <img src="https://dummyimage.com/1920x1080.gif" alt="" class="img-fluid" />
+                    <div class="card-body">
+                      <h5 class="card-title">Projet #1</h5>
+                      <p class="card-text">Description du projet.</p>
+                      <a href="#!" class="icon-link icon-link-hover link-primary fw-semibold">
+                        <span>Voir en ligne</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                  <div class="card">
+                    <img src="https://dummyimage.com/1920x1080.gif" alt="" class="img-fluid" />
+                    <div class="card-body">
+                      <h5 class="card-title">Projet #2</h5>
+                      <p class="card-text">Description du projet.</p>
+                      <a href="#!" class="icon-link icon-link-hover link-primary fw-semibold">
+                        <span>Voir en ligne</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                  <div class="card">
+                    <img src="https://dummyimage.com/1920x1080.gif" alt="" class="img-fluid" />
+                    <div class="card-body">
+                      <h5 class="card-title">Projet #3</h5>
+                      <p class="card-text">Description du projet.</p>
+                      <a href="#!" class="icon-link icon-link-hover link-primary fw-semibold">
+                        <span>Voir en ligne</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                  <div class="card">
+                    <img src="https://dummyimage.com/1920x1080.gif" alt="" class="img-fluid" />
+                    <div class="card-body">
+                      <h5 class="card-title">Projet #4</h5>
+                      <p class="card-text">Description du projet.</p>
+                      <a href="#!" class="icon-link icon-link-hover link-primary fw-semibold">
+                        <span>Voir en ligne</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                  <div class="card">
+                    <img src="https://dummyimage.com/1920x1080.gif" alt="" class="img-fluid" />
+                    <div class="card-body">
+                      <h5 class="card-title">Projet #5</h5>
+                      <p class="card-text">Description du projet.</p>
+                      <a href="#!" class="icon-link icon-link-hover link-primary fw-semibold">
+                        <span>Voir en ligne</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                  <div class="card">
+                    <img src="https://dummyimage.com/1920x1080.gif" alt="" class="img-fluid" />
+                    <div class="card-body">
+                      <h5 class="card-title">Projet #6</h5>
+                      <p class="card-text">Description du projet.</p>
+                      <a href="#!" class="icon-link icon-link-hover link-primary fw-semibold">
+                        <span>Voir en ligne</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+    <footer class="bg-dark text-bg-dark">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-4">
+            <h5>Contact</h5>
+            <p>contact@yannickremy.fr</p>
+          </div>
+          <div class="col-4">
+            <h5>Liens utiles</h5>
+            <p>
+              <a href="https://metznumericschool.fr">Metz Numeric School</a>
+            </p>
+          </div>
+          <div class="col-4">
+            <h5>Réseaux sociaux</h5>
+            <a href="#" class="fs-4"><i class="bi bi-github"></i></a>
+            <a href="#" class="fs-4"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fs-4"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>
+              &copy; 2023 - 2024 - Tous droits réservés -
+              <a href="#">Mentions légales</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap v5.3.3 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS v2.3.1 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
